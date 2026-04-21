@@ -1,0 +1,10 @@
+com\justusjoel\util\GenerateDemoHashes.class
+com\justusjoel\util\TestDirectConnection.class
+module-info.class
+com\justusjoel\util\DBConnection.class
+com\justusjoel\dao\CourseDAO.class
+com\justusjoel\model\User.class
+com\justusjoel\model\Student.class
+com\justusjoel\util\ValidationUtil.class
+com\justusjoel\dao\UserDAO.class
+com\justusjoel\util\InsertDemoUsers.class

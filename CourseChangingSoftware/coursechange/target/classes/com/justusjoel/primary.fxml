@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.justusjoel.PrimaryController"
+            style="-fx-background-color: #f5f7fa;">
+
+    <top>
+        <BorderPane style="-fx-background-color: linear-gradient(to right, #2c3e50, #34495e); -fx-padding: 20;">
+            <left>
+                <VBox>
+                    <Label text="Course Change Request Form" style="-fx-font-size: 28px; -fx-font-weight: bold; -fx-text-fill: white;"/>
+                    <Label text="Submit your course change request below" style="-fx-font-size: 13px; -fx-text-fill: #ecf0f1; -fx-padding: 5 0 0 0;"/>
+                </VBox>
+            </left>
+            <right>
+                <VBox alignment="TOP_RIGHT" spacing="5">
+                    <Label fx:id="lblUsername" style="-fx-text-fill: #ecf0f1; -fx-font-size: 12px; -fx-font-weight: bold;"/>
+                    <Button text="🚪 Logout" onAction="#handleLogout"
+                            style="-fx-padding: 5 15; -fx-font-size: 11px; -fx-background-color: #e74c3c; -fx-text-fill: white; -fx-cursor: hand;"/>
+                </VBox>
+            </right>
+        </BorderPane>
+    </top>
+
+    <center>
+        <VBox spacing="20" style="-fx-padding: 40;">
+            <HBox spacing="30">
+                <VBox spacing="8" prefWidth="280">
+                    <Label text="Student ID" style="-fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;"/>
+                    <TextField fx:id="txtStudentId" promptText="Enter your student ID"
+                               style="-fx-padding: 10; -fx-font-size: 12px; -fx-border-radius: 4; -fx-border-color: #bdc3c7;"/>
+                </VBox>
+            </HBox>
+
+            <HBox spacing="30">
+                <VBox spacing="8" prefWidth="280">
+                    <Label text="Current Course" style="-fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;"/>
+                    <ComboBox fx:id="cbCurrentCourse" promptText="Select current course"
+                              style="-fx-padding: 10; -fx-font-size: 12px;" prefWidth="280"/>
+                </VBox>
+
+                <VBox spacing="8" prefWidth="280">
+                    <Label text="New Course" style="-fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;"/>
+                    <ComboBox fx:id="cbNewCourse" promptText="Select new course"
+                              style="-fx-padding: 10; -fx-font-size: 12px;" prefWidth="280"/>
+                </VBox>
+            </HBox>
+
+            <VBox spacing="8">
+                <Label text="Reason for Change" style="-fx-font-size: 12px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;"/>
+                <TextArea fx:id="txtReason" promptText="Explain why you want to change course..."
+                         style="-fx-padding: 10; -fx-font-size: 12px; -fx-control-inner-background: #ffffff;"
+                         prefHeight="120" wrapText="true"/>
+            </VBox>
+
+            <Label fx:id="lblStatus" style="-fx-font-size: 12px; -fx-text-fill: #27ae60; -fx-padding: 10;"/>
+
+            <HBox spacing="15">
+                <Button text="📤 Submit Request" onAction="#submitRequest"
+                        style="-fx-padding: 12 30; -fx-font-size: 13px; -fx-font-weight: bold; -fx-background-color: #27ae60; -fx-text-fill: white; -fx-cursor: hand; -fx-border-radius: 4;"
+                        prefWidth="180"/>
+        
+            </HBox>
+        </VBox>
+    </center>
+
+</BorderPane>
