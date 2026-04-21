@@ -56,28 +56,18 @@ The application is organized into the following packages:
 
 ---
 
-## ▶️ How to Run the Project
+▶️ How to Run the Project
 
-1. Clone the repository: git clone https://github.com/Allstarhudd/CourseChange.git
+Clone the repository:
 
+git clone https://github.com/Allstarhudd/CourseChange.git
+Open the project in an IDE (e.g., VS Code or IntelliJ)
+Ensure Java 21 is installed and configured
 
-   ```bash
-   ```
+Build the project using Maven:
 
-2. Open the project in an IDE (e.g., VS Code or IntelliJ)
-
-3. Ensure Java 21 is installed and configured
-
-4. Build the project using Maven:
-
-   ```bash
-   mvn clean install
-   ```
-
-5. Run the application from the main class (`App`)
-
----
-
+mvn clean install
+Run the application from the main class (App)
 ## 📈 Future Improvements
 
 * Add database integration (e.g., MySQL or PostgreSQL)
