@@ -61,7 +61,7 @@ The application is organized into the following packages:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/REPO_NAME.git
+To https://github.com/Allstarhudd/CourseChange.git
    ```
 
 2. Open the project in an IDE (e.g., VS Code or IntelliJ)
