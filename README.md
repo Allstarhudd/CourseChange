@@ -58,10 +58,10 @@ The application is organized into the following packages:
 
 ## ▶️ How to Run the Project
 
-1. Clone the repository:
+1. Clone the repository: git clone https://github.com/Allstarhudd/CourseChange.git
+
 
    ```bash
-To https://github.com/Allstarhudd/CourseChange.git
    ```
 
 2. Open the project in an IDE (e.g., VS Code or IntelliJ)
